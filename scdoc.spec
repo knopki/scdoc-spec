@@ -1,10 +1,10 @@
 Name:           scdoc
-Version:        1.4.1
+Version:        1.5.1
 Release:        1%{?dist}
 Summary:        Tool for generating roff manual pages
 License:        MIT
 URL:            https://git.sr.ht/~sircmpwn/%{name}
-Source0:        %{url}/snapshot/%{name}-%{version}.tar.xz
+Source0:        %{url}/archive/%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  gcc
@@ -45,8 +45,12 @@ make check
 %doc README.md
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
+%{_mandir}/man5/%{name}.5.gz
 
 %changelog
+* Sat Oct 14 2018 Sergey Korolev <korolev.srg@gmail.com> - 1.5.1-1
+- New release
+
 * Tue Aug 7 2018 Marcin Skarbek <rpm@skarbek.name> - 1.4.1-1
 - New release
 
